@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="StyleLogin.css">
+    <script rel="javascript" src="Sample.js"></script>
+<meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="Books" cellpadding="4" cellspacing="4" border="1">
+    <tr>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="0">
+                <thead>
+                <tr>
+                    <td colspan="2">
+                        <h1>Welcome to Online Books Store </h1>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        Harry potter,(part-1),cost-$50,Discount-10%
+                    </td>
+                    <td>
+                        <input type="button" value="Add to cart" onclick="AddtoCart('Harry potter','part-1',50,10)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Harry potter,(part-2),cost-$150,Discount-15%
+                    </td>
+                    <td>
+                        <input type="button" value="Add to cart" onclick="AddtoCart('Harry potter','part-2',150,15)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Game of thrones-7th Edition-150,Discount-10%
+                    </td>
+                    <td>
+                        <input type="button" value="Add to cart" onclick="AddtoCart('Game of thrones','7th Edition',150,15)"/>
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+        </td>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="ListOfProducts">
+                <thead>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Description
+                    </td>
+                    <td>
+                        Price
+                    </td>
+                </tr>
+                </thead>
+                <tbody id="orderbooks">
+
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3" align="right" id="cartTotal">
+                            cart total
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
